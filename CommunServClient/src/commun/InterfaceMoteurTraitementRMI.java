@@ -9,7 +9,7 @@ import input_output.Output;
 
 public interface InterfaceMoteurTraitementRMI extends Remote
 {
-	//Catalogue
+	//Methode de calcul de l'interface 
 	public Output compute(Input data) throws RemoteException;
 	
 }
