@@ -3,7 +3,7 @@ package servmultiple;
 import java.rmi.registry.*;
 import java.util.Scanner;
 
-//import commun.*;
+import commun.*;
 
 public class Client 
 {
@@ -20,7 +20,7 @@ public class Client
 			{	
 				registry[i] = LocateRegistry.getRegistry("localhost", 1099);
 				/* TODO : Remplacer Object par l'interface*/
-				Object h = (Object) registry[i].lookup ("UnStore");	
+				InterfaceMoteurTraitementRMI h = (InterfaceMoteurTraitementRMI) registry[i].lookup ("UnStore");	
 				Scanner sc = new Scanner(System.in);	
 			}catch (Exception e) 
 			{
