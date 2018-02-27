@@ -11,7 +11,7 @@ public class Client
 	public static void main(String[] args) 
 	{
 		
-		int nombreServeurs=0; 
+		int nombreServeurs=200; 
 		 // On créé un tableau de serveurs de taille statique 
 		Registry[] registry=new Registry[nombreServeurs];;                 
 		//On parcourt l'ensemble des serveurs disponibles
